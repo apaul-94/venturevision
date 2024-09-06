@@ -1,0 +1,48 @@
+/* Sidebar Style */
+#pages-and-posts-sidebar{
+    background-color: #f6f6f6;
+    min-height: 50px;
+    padding: 15px 15px;
+    position: sticky;
+    top: 100px;
+    overflow-wrap: break-word;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#pages-and-posts-sidebar p{
+    font-size: 15px;
+}
+
+#pages-and-posts-sidebar .wp-block-heading{
+    background-color: rgba(148, 148, 148, 0.601);
+    padding: 8px 10px 8px 10px;
+}
+
+#default-heading{
+    font-family: Outfit, sans-serif;
+    background-color: rgba(148, 148, 148, 0.601);
+    padding: 8px 10px 8px 10px;
+}
+
+#default-list-items{
+    font-size: 15px;
+    font-family: "Abel", sans-serif;
+
+}
+
+#default-images{
+    padding-bottom: 16px;
+}
+
+#default-images img{
+    border-radius: 5px;
+}
+
+#from-venture-vision{
+    font-size: 15px;
+    font-family: "Abel", sans-serif;
+    font-weight: bold;
+}
+

@@ -1,0 +1,133 @@
+header.navbar {
+    padding: 5px 0px;
+    box-shadow: 0px 5px 9px #5e5e5e;
+    border-bottom: 3px solid orangered;
+}
+
+li.current-menu-item a {
+    color: orangered;
+    text-shadow: 1px 1px 0px rgb(150, 149, 149);
+}
+
+#logo{
+    max-height: 65px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #e9e9e9;
+}
+
+.navbra-brand img{
+    margin: 15px;
+}
+
+/* Toggle button styling */
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar-toggle span {
+    background-color: orangered;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+}
+
+/* Menu styling */
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    right: -20px;
+}
+
+.navbar-menu li {
+    margin: 0 10px;
+}
+
+.navbar-menu a {
+    color: rgb(27, 27, 27);
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    font-size: 18px;
+    font-family: "Abel", sans-serif;
+    font-weight: 600;
+}
+
+.navbar-menu a:hover {
+    text-decoration: none;
+    color: orangered;
+    text-shadow: 1px 1px 0px rgb(150, 149, 149);
+}
+
+/* Dropdown arrow styling */
+.menu-item-has-children>a::after {
+    content: '\02C5';
+    /* Unicode character for down arrow */
+    font-size: 18px;
+    margin-left: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    color: rgb(27, 27, 27);
+}
+
+.menu-item-has-children:hover>a::after {
+    transform: rotate(180deg);
+    /* Rotate the arrow when hovered */
+}
+
+/* Dropdown styling */
+.navbar-menu .sub-menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(27, 27, 27);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+    color: whitesmoke;
+}
+
+.navbar-menu .sub-menu a{
+    color: whitesmoke;
+    padding: 10px;
+}
+
+.navbar-menu .sub-menu a:hover{
+    color: orangered;
+}
+
+
+
+.navbar-menu .menu-item-has-children:hover .sub-menu {
+    display: block;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+        padding: 15px;
+        position: relative;
+        left: -27px;
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+}

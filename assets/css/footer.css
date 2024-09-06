@@ -1,0 +1,149 @@
+/*====================== 
+Style for Footer Section
+======================*/
+#footer-section{
+    background-color: #dedede;
+    padding: 50px 0px 50px 0px;
+    overflow-wrap: break-word;
+    border-top: 3px solid black;
+}
+
+.widget-title{ 
+    color: rgb(27, 27, 27);
+    border-left: 5px solid orangered;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+footer .wp-block-heading{
+    color: rgb(27, 27, 27);
+    border-left: 5px solid orangered;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+footer .widget{
+    font-size: 15px;
+    font-family: "Abel", sans-serif;
+    color: black;
+}
+
+/* Wordpress search form design */
+div.wp-block-search__inside-wrapper{
+    margin-bottom: 16px;
+}
+
+button.wp-block-search__button.wp-element-button{
+    background-color: orangered;
+    color: whitesmoke;
+    word-break: normal;
+    padding: 8px;
+    border: none;
+}
+
+/* Footer default form css */
+input#s{
+    width: 65%;
+    flex-grow: 1;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+input#searchsubmit{
+    width: 30%;
+    background-color: orangered;
+    color: whitesmoke;
+    word-break: normal;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Targeting list items inside widgets */
+.widget ul{
+    padding: 0px 0px 0px 10px;
+}
+
+.widget ul li {
+    list-style-type: none; /* Removes default bullet */
+    padding-left: 25px; /* Adds space for custom bullet */
+    position: relative; /* Allows positioning of custom bullet */
+}
+
+.widget ul li::before {
+    content: '🔸'; /* Change this character to any bullet symbol or use a custom icon */
+    font-size: 18px; /* Customize the size of the bullet */
+    position: absolute; /* Positioning relative to the li element */
+    left: 0; /* Adjust the position as needed */
+    top: 0; /* Adjust the position as needed */
+}
+
+div.social-media-of-footer{
+    font-size: 27px;
+    display: flex;
+    gap: 8px;
+}
+
+div.social-media-of-footer a{
+    color: rgb(27, 27, 27);
+}
+
+div.social-media-of-footer a.bi::before{
+    border: 1px solid rgb(27, 27, 27);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#copyright-section{
+    background-color: rgb(27, 27, 27);
+    font-size: 14px;
+    color: white;
+    padding: 20px 10px 5px 10px;
+}
+
+/* Remove the bullet for social icons */
+.widget ul.wp-social-links li::before,
+.widget ul.wp-block-social-links li::before {
+    content: none; /* Disable the custom bullet */
+}
+
+/*================
+Back to Top Button
+================*/
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: orangered; /* Bootstrap primary color */
+    border-radius: 50%;
+    color: white;
+    font-size: 25px;
+    padding: 10px 15px 8px 15px;
+    display: none;
+    z-index: 1000;
+    transition: opacity 0.3s, visibility 0.3s;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+}
+
+.back-to-top:hover {
+    color: rgb(35, 35, 35);
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

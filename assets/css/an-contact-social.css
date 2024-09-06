@@ -1,0 +1,27 @@
+.contact-social-section {
+    padding: 10px 0;
+    background-color: rgb(27, 27, 27);
+}
+
+.contact-info,
+.social-media {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    font-family: "Abel", sans-serif;
+    color: whitesmoke;
+}
+
+.contact-info i{
+    color: orange;
+}
+
+.social-media a{
+    color: orange;
+    
+}
+
+.social-media a:hover{
+    color: whitesmoke;
+    
+}

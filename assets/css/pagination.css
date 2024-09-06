@@ -1,0 +1,48 @@
+/*================== 
+Style for pagination 
+==================*/
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content:start;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    position: relative;
+    left: -5px;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination li a {
+    padding: 10px 15px;
+    color: #000;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    /* border-left: 2px solid orangered; */
+    /* border-right: 2px solid orangered; */
+}
+
+.pagination li a:hover {
+    background-color: orangered;
+    color: whitesmoke;
+}
+
+.pagination li .current {
+    background-color: orangered;
+    color: #fff;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+#upper-pagination{
+    margin-top: -12px;
+    margin-bottom: 22px;
+}

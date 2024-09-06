@@ -1,0 +1,297 @@
+/* Single post design css */
+#single-post-left-col{
+    height: auto;
+    position: sticky;
+    top: 100px;
+    overflow-wrap: break-word;
+}
+
+#single-post-title{
+    padding: 0px 16px 0px 16px;
+    font-size: 32px;
+    color: black;
+}
+
+#single-post-title h1::first-letter{
+    text-decoration: underline;
+    text-decoration-color: orangered;
+}
+
+#single-post-thumbnail {
+    padding: 0px 16px;
+}
+
+#thumnail-image-for-style{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+#thumnail-image-for-style img{
+    width: 100%;
+    height: auto;
+}
+
+#single-post-meta-data{
+    padding: 0px 16px 5px 16px;
+    margin-top: 12px;
+}
+
+#single-post-date{
+    font-size: 15px;
+    color: rgb(58, 58, 58);
+    padding: 10px;
+    font-family: "Abel", sans-serif;
+    font-weight: bold;
+    background-color: #e9e9e9;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+
+#single-post-author{
+    font-size: 15px;
+    background-color: orange;
+    color: rgb(58, 58, 58);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: "Abel", sans-serif;
+
+} 
+
+/* For post categories and post tags */
+#single-post-categories-tags{
+    padding: 0px 16px 0px 16px;
+    font-family: "Abel", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#post-categories-title{
+    font-family: Outfit, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#post-tags-title{
+    font-family: Outfit, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#single-post-content{
+    font-size: 15px;
+    padding: 5px 16px 0px 16px;
+}
+
+ol.wp-block-list{
+    font-size: 15px;
+    font-family: "Abel", sans-serif;
+}
+
+ul.wp-block-list{
+    font-size: 15px;
+    font-family: "Abel", sans-serif;
+}
+
+#post-navigation{
+    padding: 0px 16px 0px 16px;
+}
+
+#previous-post-link{
+    background-color: #ededed;
+    padding: 10px 20px;
+    border-left: 5px solid orangered;
+    font-size: 15px;
+    margin: 0px 5px 0px 0px;
+}
+
+#previous-post-link a{
+    text-decoration: none;
+    color: black;
+}
+
+#previous-post-link a:hover{
+    color: orangered;
+}
+
+#next-post-link{
+    background-color: #ededed;
+    padding: 10px 20px;
+    border-right: 5px solid orangered;
+    font-size: 15px;
+    margin: 0px 0px 0px 5px;
+}
+
+#next-post-link a{
+    text-decoration: none;
+    color: black;
+}
+
+#next-post-link a:hover{
+    color: orangered;
+}
+
+
+
+/* For User Comment Section */
+#comment-template-section{
+    padding: 5px 16px 0px 16px;
+}
+
+span#email-notes{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+span.required-field-message{
+    color: black;
+    font-weight: bold;
+}
+
+p.comment-notes{
+    font-family: "Abel", sans-serif;
+    font-size: 15px;
+}
+
+label{
+    font-family: "Abel", sans-serif;
+    font-size: 15px;
+}
+
+#comments{
+    display: block;
+}
+
+.comments-area {
+    display: block;
+}
+
+.comment-list {
+    margin-bottom: 40px; /* Adds space between comment list and comment form */
+}
+
+.commentlist li{
+    list-style: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: -40px;
+    font-size: 15px;
+    border: 1px solid rgb(85, 85, 85);
+    font-family: "Abel", sans-serif;
+}
+
+.comment-respond {
+    clear: both; 
+}
+
+.comment-list, .comment-respond {
+    width: 100%;
+    display: block;
+}
+
+.comment-form label{
+    display: block;
+    /* margin-bottom: 5px; */
+}
+
+/* Adjust input fields to have full width */
+.comment-respond input[type="text"],
+.comment-respond input[type="email"],
+.comment-respond textarea {
+    width: 100%;
+    padding: 10px;
+    /* margin-bottom: 00px; */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    font-size: 15px;
+    font-family: "Abel", sans-serif;
+
+}
+
+/* Style the submit button */
+.comment-respond input[type="submit"] {
+    padding: 10px 20px;
+    background-color: orangered;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: -10px;
+}
+
+.comment-respond input[type="submit"]:hover {
+    background-color: #000;
+}
+
+/* Style for the social sharing and print buttons */
+.post-sharing .social-button {
+    position: relative;
+    top: -10px;
+    left: -5px;
+    display: inline-block; /* Display buttons inline */
+    margin: 3px; /* Add space between buttons */
+    padding: 5px 10px 5px 15px; /* Padding inside the buttons */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 16px; /* Font size */
+    color: #ffffff; /* Text color */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Specific styles for each social button */
+.post-sharing .social-button.facebook {
+    background-color: #3b5998; /* Facebook blue */
+}
+
+.post-sharing .social-button.whatsapp {
+    background-color: #25d366; /* WhatsApp green */
+}
+
+.post-sharing .social-button.telegram {
+    background-color: #0088cc; /* Telegram blue */
+}
+
+.post-sharing .social-button.email {
+    background-color: #f39c12; /* Email yellow */
+}
+
+.post-sharing .social-button.print {
+    background-color: #555; /* Generic gray */
+}
+
+/* Hover effect for buttons */
+.post-sharing .social-button:hover {
+    opacity: 0.8; /* Slightly reduce opacity on hover */
+}
+
+/* Icon styling */
+.post-sharing .social-button i {
+    margin-right: 5px; /* Add space between icon and text */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
